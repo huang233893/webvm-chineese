@@ -1,5 +1,7 @@
-Welcome to WebVM: A complete desktop environment running in the browser
+欢迎使用WebVM：一个完全在浏览器中运行的桌面环境
 
-WebVM is powered by CheerpX: a x86-to-WebAssembly virtualization engine and Just-in-Time compiler
+WebVM由CheerpX提供支持：一款x86到WebAssembly的虚拟化引擎和即时编译器
 
-For more info: https://cheerpx.io
+翻译版本由Supermini233（huang233893）制作而成
+
+更多信息：https://cheerpx.io
