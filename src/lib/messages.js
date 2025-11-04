@@ -1,53 +1,50 @@
-const color= "\x1b[1;35m";
-const underline= "\x1b[94;4m";
-const normal= "\x1b[0m";
+const color = "\x1b[1;35m";
+const underline = "\x1b[94;4m";
+const normal = "\x1b[0m";
 export const introMessage = [
 	"+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~+",
 	"|                                                                             |",
-	"| WebVM is a virtual Linux environment running in the browser via WebAssembly |",
+	"| WebVM是一个通过WebAssembly在浏览器中运行的虚拟Linux环境                        |",
 	"|                                                                             |",
-	"| WebVM is powered by the CheerpX virtualization engine, which enables safe,  |",
-	"| sandboxed client-side execution of x86 binaries, fully client-side          |",
+	"| WebVM由CheerpX虚拟化引擎提供支持，可实现安全、沙箱化的客户端x86二进制执行        |",
+	"| 完全在客户端运行                                                             |",
 	"|                                                                             |",
-	"| CheerpX includes an x86-to-WebAssembly JIT compiler, a virtual block-based  |",
-	"| file system, and a Linux syscall emulator                                   |",
+	"| CheerpX包含x86到WebAssembly的JIT编译器、虚拟块级文件系统和Linux系统调用模拟器   |",
 	"|                                                                             |",
-	"| Try out the new Alpine / Xorg / i3 WebVM: " + underline + "https://webvm.io/alpine.html" + normal + "      |",
+	"| 尝试新的Alpine/Xorg/i3版本WebVM: " + underline + "https://webvm.io/alpine.html" + normal + "      |",
 	"|                                                                             |",
-	"| [News] BrowserPod: Full-stack dev environments in the browser via Wasm      |",
-	"|                                                                             |",
-	"| " + underline + "https://labs.leaningtech.com/blog/browserpod-annoucement" + normal + "                    |",
+	"|  Supermini233(huang233893) 汉化  加载需要2-5分钟，如加载不出来请刷新或者挂代理  |",
 	"|                                                                             |",
 	"+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~+",
 	"",
-	"   Welcome to WebVM. If unsure, try these examples:",
+	"   欢迎使用WebVM。如果不确定如何操作，可以尝试以下示例：",
 	"",
 	"     python3 examples/python3/fibonacci.py ",
 	"     gcc -o helloworld examples/c/helloworld.c && ./helloworld",
 	"     objdump -d ./helloworld | less -M",
 	"     vim examples/c/helloworld.c",
-	"     curl --max-time 15 parrot.live  # requires networking",
+	"     curl --max-time 15 parrot.live  # 需要网络支持",
 	""
 ];
 export const errorMessage = [
-	color + "CheerpX could not start" + normal,
+	color + "CheerpX无法启动" + normal,
 	"",
-	"Check the DevTools console for more information",
+	"查看开发者工具控制台获取更多信息",
 	"",
-	"CheerpX is expected to work with recent desktop versions of Chrome, Edge, Firefox and Safari",
+	"CheerpX兼容最新版本的Chrome、Edge、Firefox和Safari桌面浏览器",
 	"",
-	"Give it a try from a desktop version / another browser!",
+	"请尝试使用桌面版浏览器或其他浏览器！",
 	"",
-	"CheerpX internal error message is:",
+	"CheerpX内部错误信息：",
 	""
 ];
 export const unexpectedErrorMessage = [
-	color + "WebVM encountered an unexpected error" + normal,
+	color + "WebVM遇到意外错误" + normal,
 	"",
-	"Check the DevTools console for further information",
+	"查看开发者工具控制台获取更多信息",
 	"",
-	"Please consider reporting a bug!",
+	"请考虑报告此问题！",
 	"",
-	"CheerpX internal error message is:",
+	"CheerpX内部错误信息：",
 	""
 ];
